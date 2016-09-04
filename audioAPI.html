@@ -5,6 +5,22 @@
     <title>吴天赐 - AudioAPI</title>
 </head>
 <body>
-
+    <buttion id="btn">播放</buttion>
+<script type="text/javascript">
+window.onload = function(){
+    var audio = new Audio();
+    var btn = document.getElemetById('btn');
+    btn.onclick = function(){
+        audio.src="audio/music_00.mp3";
+        audio.preload = "metadata"
+        audio.play();
+        var timer = setInterval(function(){
+            console.log(audio);
+            console.log(audio.currentTime);
+        },10);
+        
+    }
+}
+</script>
 </body>
 </html>
