@@ -14,11 +14,14 @@ window.onload = function(){
         audio.src="audio/music_00.mp3";
         audio.preload = "metadata"
         audio.play();
+        var i=0;
         var timer = setInterval(function(){
+            if(i>1000){
             console.log(audio.currentTime);
             console.log(audio.duration);
-         
-        },10);
+            }
+            i++;
+        },100);
         
     }
 }
