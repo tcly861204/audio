@@ -16,12 +16,12 @@ window.onload = function(){
         audio.play();
         var i=0;
         var timer = setInterval(function(){
-            if(i>1000){
+            if(i<300){
             console.log(audio.currentTime);
             console.log(audio.duration);
             }
             i++;
-        },100);
+        },200);
         
     }
 }
