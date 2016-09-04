@@ -15,8 +15,9 @@ window.onload = function(){
         audio.preload = "metadata"
         audio.play();
         var timer = setInterval(function(){
-            console.log(audio);
             console.log(audio.currentTime);
+            console.log(audio.duration);
+         
         },10);
         
     }
