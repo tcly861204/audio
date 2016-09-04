@@ -15,7 +15,15 @@ window.onload = function(){
         audio.preload = "metadata"
         audio.play();
         var i=0;
+        var buffered, percent;
+        // 已缓冲部分
+        audio.readyState == 4 && (buffered = audio.buffered.end(0));
+        // 已缓冲百分百
+        audio.readyState == 4 && (percent = Math.round(buffered / audio.duration * 100) + '%');
+        
+        
         var timer = setInterval(function(){
+            console.log(percent);
            /* if(i<300){
             console.log(audio.currentTime);
             console.log(audio.duration);
@@ -29,7 +37,7 @@ window.onload = function(){
             // 获取以缓存的时间
             var timeBuffered = timeRages.end(timeRages.length - 1);
             console.log('2-'+timeBuffered);
-        },200);
+        },10);
         
     }
 }
