@@ -1,4 +1,4 @@
-[{
+var json = [{
 	"title":"西施别恋",
 	"author":"郑源/储兰兰",
 	"imgsrc":"images/music_00.jpg",
@@ -24,13 +24,13 @@
 	"author":"李玉刚",
 	"imgsrc":"images/music_03.jpg",
 	"music":"audio/music_03.mp3",
-	"time":"04:00"	  
+	"time":"04:00"
   },
   {
 	"title":"思思念念全是你",
 	"author":"高安",
 	"imgsrc":"images/music_04.jpg",
 	"music":"audio/music_04.mp3",
-	"time":"04:10"	  
+	"time":"04:10"
   }
-]
+];

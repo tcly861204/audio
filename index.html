@@ -1,65 +1,64 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>在线音乐播放器</title>
-<!--[if lt IE 8]>
-<script type="text/javascript">
-     alert("你的浏览器版本太低，请升级浏览器吧！");
-</script>
-<![endif]-->
-<meta name="keywords" content="音乐播放器,html5播放器" />
-<meta name="copyright" content="音乐播放器,js,html5,css3" />
-<meta name="author" content="吴天赐|tcly861204@hotmail.com" />
-<link rel="stylesheet" type="text/css" href="style/audio.css" />
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/audio.min.js"></script>
+    <meta charset="utf-8">
+    <title>在线音乐播放器--仿百度</title>
+    <!--[if lt IE 8]>
+    <script type="text/javascript">
+        alert("你的浏览器版本太低，请升级浏览器吧！");
+    </script>
+    <![endif]-->
+    <meta name="keywords" content="音乐播放器,html5播放器" />
+    <meta name="copyright" content="音乐播放器,js,html5,css3" />
+    <meta name="author" content="吴天赐" />
+    <link rel="stylesheet" type="text/css" href="style/basic.css" />
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/music.min.js"></script>
 </head>
 <body>
 
 <div id="background" class="background" style="background: transparent none repeat scroll 0% 0%; overflow: hidden; z-index: 0;">
-<div class="fillmoreInner" style="left: 0px; top: 0px; position: absolute; overflow: hidden; z-index: -999999; margin: 0px; padding: 0px; height: 100%; width: 100%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-image: url(images/bj2.jpeg); display: block;"></div>
+    <div class="fillmoreInner" style="left: 0px; top: 0px; position: absolute; overflow: hidden; z-index: -999999; margin: 0px; padding: 0px; height: 100%; width: 100%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-image: url(images/bj2.jpeg); display: block;"></div>
 </div>
 
 
 <div class="music">
-    <audio class="audio-music" preload="auto" src=""></audio>
+    <audio class="audio-music" preload="auto" src="audio/music_00.mp3"></audio>
     <div class="audio">
-      <div class="audio-img"><img src=""><span class="audio-imgbtn imgbtn-off">btn</span></div>
-      <div class="audio-title"></div>
-      <div class="audio-line">
-        <div class="line-on"></div>
-      </div>
-      <div class="audio-time"></div>
-      
-      <div class="sound sound-on"></div>
-      <div class="sound-Control">
-        <div class="sound-line"></div>
-        <span class="sound-slide"></span>
-      </div>
-      
-      <div class="audio-btn audio-up">next</div>
-      <div class="audio-btn audio-play btn-off">play</div>
-      <div class="audio-btn audio-next">next</div>
+        <div class="audio-img"><img src=""><span class="audio-imgbtn imgbtn-off">btn</span></div>
+        <div class="audio-title"></div>
+        <div class="audio-line">
+            <div class="line-on"></div>
+        </div>
+        <div class="audio-time"></div>
+
+        <div class="sound sound-on"></div>
+        <div class="sound-Control">
+            <div class="sound-line"></div>
+            <span class="sound-slide"></span>
+        </div>
+
+        <div class="audio-btn audio-up">next</div>
+        <div class="audio-btn audio-play btn-off">play</div>
+        <div class="audio-btn audio-next">next</div>
     </div>
 </div>
 
 <div class="menuright">
-<dl>
- <dt>
-  <p class="userphoto"><img src="./images/user.jpg" /></p>
-  <p class="usertext">cobill</p>
- </dt>
- <dd class="">推荐</dd>
- <dd>心情</dd>
- <dd>场景</dd>
- <dd>博文</dd>
- <dd><img src="images/search.png" /></dd>
- <dd>首页</dd>
- <dd>加入我们</dd>
-</dl>
-<div class="qq"><img src="images/qq.png" /></div>
+    <dl>
+        <dt>
+        <p class="userphoto"><img src="./images/user.jpg" /></p>
+        <p class="usertext">cobill</p>
+        </dt>
+        <dd class="">推荐</dd>
+        <dd>心情</dd>
+        <dd>场景</dd>
+        <dd>博文</dd>
+        <dd><img src="images/search.png" /></dd>
+        <dd>首页</dd>
+        <dd>加入我们</dd>
+    </dl>
+    <div class="qq"><img src="images/qq.png" /></div>
 </div>
-
 </body>
 </html>
