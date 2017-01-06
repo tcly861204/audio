@@ -1,8 +1,12 @@
 /**
  * Created by Administrator on 2016/9/25.
  */
-(function(W){
-    var _Music = {
+(function(root,factory){
+    root.addEventListener('load',function(){
+        factory(root).init();
+    },false);
+})(window,function(window){
+    return {
         getId:function(id){
             return document.getElementById(id);
         },
@@ -176,8 +180,8 @@
             this.soundSlide.onmousedown = function(e){
                 var ev = e || window.event;
                 var that=this,
-                disX=e.clientX-that.offsetLeft,
-                disY=e.clientY-that.offsetTop;
+                    disX=e.clientX-that.offsetLeft,
+                    disY=e.clientY-that.offsetTop;
                 document.onmousemove = function(e){
                     var ev = e || window.event;
                     var T=e.clientY-disY-50;
@@ -236,8 +240,4 @@
             };
         }
     };
-    W.Music = _Music;
-})(window);
-window.onload = function() {
-    Music.init();
-};
+});
